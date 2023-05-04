@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="589.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="form">
+   <children>
+      <ImageView fitHeight="107.0" fitWidth="600.0" layoutX="-10.0" layoutY="-8.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background-g11166befd_1920p.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="107.0" fitWidth="600.0" layoutX="-5.0" layoutY="622.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background-g11166befd_1920p.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="14.0" layoutY="86.0" prefHeight="47.0" prefWidth="197.0" text="Registration ">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="86.0" prefHeight="47.0" prefWidth="94.0" text="Form" textFill="#1e2bb5">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="145.0" prefHeight="23.0" prefWidth="204.0" text="PERSONAL INFORMATION">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Line endX="116.0" layoutX="116.0" layoutY="170.0" startX="-110.0" stroke="#d71212" />
+      <Label layoutX="14.0" layoutY="189.0" prefHeight="25.0" prefWidth="69.0" text="Full Name :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Full" blendMode="MULTIPLY" layoutX="84.0" layoutY="189.0" prefHeight="25.0" prefWidth="497.0" />
+      <Label layoutX="16.0" layoutY="242.0" prefHeight="25.0" prefWidth="69.0" text="E-mail       :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="mail" blendMode="MULTIPLY" layoutX="84.0" layoutY="242.0" prefHeight="25.0" prefWidth="197.0" />
+      <TextField fx:id="Phone" blendMode="MULTIPLY" layoutX="371.0" layoutY="242.0" prefHeight="25.0" prefWidth="210.0" />
+      <Label layoutX="305.0" layoutY="242.0" prefHeight="25.0" prefWidth="69.0" text="Phone      :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Line endX="96.0" layoutX="125.0" layoutY="339.0" startX="-119.0" stroke="#d71212" />
+      <Label layoutX="17.0" layoutY="314.0" prefHeight="23.0" prefWidth="204.0" text="Subjects">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="Science" layoutX="51.0" layoutY="375.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Science">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="Maths" layoutX="51.0" layoutY="431.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="Maths">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="ICT" layoutX="51.0" layoutY="485.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="ICT">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="English" layoutX="49.0" layoutY="549.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="94.0" text="English">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="281.0" layoutY="314.0" prefHeight="23.0" prefWidth="204.0" text="Address">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Line endX="96.0" layoutX="389.0" layoutY="339.0" startX="-119.0" stroke="#d71212" />
+      <TextField fx:id="Address" blendMode="MULTIPLY" layoutX="359.0" layoutY="363.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label layoutX="290.0" layoutY="363.0" prefHeight="25.0" prefWidth="69.0" text="Address    :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="290.0" layoutY="431.0" prefHeight="25.0" prefWidth="69.0" text="The City    :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="City" blendMode="MULTIPLY" layoutX="359.0" layoutY="431.0" prefHeight="25.0" prefWidth="216.0" />
+      <Button blendMode="MULTIPLY" layoutX="234.0" layoutY="624.0" mnemonicParsing="false" onAction="#Submit" prefHeight="25.0" prefWidth="94.0" text="Submit">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <Bloom threshold="1.0" />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
